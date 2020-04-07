@@ -1,5 +1,7 @@
 
 let options = {
+    proxy: 'staging.service.vc',
+    alias:'vc2_eoIT8U3cDRw',
     bandwith: 1024,
     pin: false
 };
@@ -38,4 +40,4 @@ pex.onConnect= (videoUrl) => {
 
 
 // #1: start het proces door een makeCall te geven
-pex.makeCall('staging.service.vc','vc2_eoIT8U3cDRw','tester');
+pex.makeCall(options.proxy,options.alias,'tester');
